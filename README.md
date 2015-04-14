@@ -3,16 +3,18 @@ A suite of JS scripts screen-scrape data, after which MatLab scripts compounds a
 
 
 # JavaScript
-The suite of scripts are combined into one file to run sequentially. The raw collected data is uploaded to Parse.
-Profile: # of friends, # of groups, profile picture upload dates, top 10 friends, # people chatted to in last 8 weeks,
-	average number of likes/comments on person's posts,# of people blocked,# of incoming/outgoing pending friend requests
-Friends: # of friends of friends (and if from Brandeis plus name/gender)
-Activity log (past 8 weeks): # of statuses,# of pictures,# of comments,# of likes, # of shares
-Chats (top 10 friends+any group convos, past week): each comment with length+time
+The suite of scripts are combined into one file to run sequentially. The raw collected data is uploaded to Parse.\s\s
+Profile: # of friends, # of groups, top 10 friends, age of person\s\s
+\taverage number of likes/comments on person's posts,# of people blocked,# of incoming/outgoing pending friend requests\s\s
+Photos: # of photos of you, # of albums, (each album) upload dates/likes/comments 
+Friends: # of friends of friends (and if from Brandeis plus name/gender)\s\s
+Activity log (past 8 weeks): # of statuses,# of pictures,# of comments,# of likes, # of shares\s\s
+Chats (top 10 friends+any group convos, past week): each comment with length+time, # people chatted to in last 8 weeks
 
 We can then give the following report:
-- *activity log*: timeline of prof pic uploads, statuses, pictures, comments, likes, share
-- *profile*: name, # friends, percentage of friends from Brandeis, top 10 friends
+- *activity log*: timeline of prof pic uploads, statuses, pictures, comments, likes, shares
+- *profile*: name, # friends, percentage of friends from Brandeis, top 10 friends, age of person/account,
+likes/comments on prof pics
 - *friends*: normalized rank in terms of number of friends, gender ratio of friends
 - *disclaimer*: all friends do not make data accessible, assumed to be negligible loss of information
 - *chats*: average response time, participation percentage, average message length 
