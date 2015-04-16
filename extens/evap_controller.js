@@ -24,8 +24,8 @@ setTimeout(function(){
 		case "ninc":evap_ninc();break;
 		case "nout":evap_nout(sub);break;
 
-		case "log":evap_log();break;
 		case "friends":evap_friends();break;
+		case "log":evap_log(sub);break;
 		case "chat":evap_chat();break;
 		default:
 			localStorage.username=href;// save username
