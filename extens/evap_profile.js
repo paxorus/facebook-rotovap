@@ -73,7 +73,7 @@ function evap_top10(sub){
 	localStorage.pay=JSON.stringify(pay);
 
 	localStorage.duty="ninc";
-	location.href="https://www.facebook.com/friends/requests/?fcref=jwl"
+	location.href="https://www.facebook.com/friends/requests/?fcref=jwl";
 }
 
 // set the # of incoming friend requests

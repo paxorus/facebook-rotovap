@@ -4,10 +4,10 @@ A suite of JS scripts screen-scrape data, after which MatLab scripts compounds a
 
 # JavaScript
 The suite of scripts are combined into one file to run sequentially. The raw collected data is uploaded to Parse.\s\s
-Profile: # of friends, # of groups, top 10 friends, age of person\s\s
+Profile: #friends, #groups, top 10 friends, age of person\s\s
 \taverage number of likes/comments on person's posts,# of people blocked,# of incoming/outgoing pending friend requests\s\s
 Photos: # of photos of you, # of albums, (each album) upload dates/likes/comments 
-Friends: # of friends of friends (and if from Brandeis plus name/gender)\s\s
+Friends: # of friends of friends\s\s
 Activity log (past 8 weeks): # of statuses,# of pictures,# of comments,# of likes, # of shares\s\s
 Chats (top 10 friends+any group convos, past week): each comment with length+time, # people chatted to in last 8 weeks
 
