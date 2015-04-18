@@ -120,7 +120,7 @@ function finish_photo(sub){
 	sub.set("payload",pay);
 	sub.save({success:function(){
 		console.log("Bro!");
-		localStorage.duty="phofyo";
+		localStorage.duty="";
 	}});
 }
 
