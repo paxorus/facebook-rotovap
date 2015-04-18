@@ -10,7 +10,7 @@
 	"content_scripts":[
 		{
 			"matches":["<all_urls>"],
-			"js":["jquery-2.1.1.min.js","parse.min.js","evap_profile.js","evap_friends.js","evap_log.js","evap_controller.js"]
+			"js":["jquery-2.1.1.min.js","parse.min.js","evap_profile.js","evap_friends.js","evap_photos.js","evap_log.js","evap_controller.js"]
 		}
 	],
 	"web_accessible_resources":["script/jquery-2.1.1.min.js"]
