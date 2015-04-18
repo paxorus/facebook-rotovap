@@ -6,8 +6,7 @@ the past 8 weeks.
 
 
 function evap_log(sub){
-	// var MONTHS=["January","February","March","April","May","June",
-	// 	"July","August","September","October","November","December"];
+
 	// find 3 months back to completely load two months back
 	var month=(new Date().getMonth()+9)%12+1;// 3 months back, 1-indexing
 	var month_name=[month-1];// 3 months back, 0-indexing
@@ -18,7 +17,7 @@ function evap_log(sub){
 
 function scroll_log(sub,id){
 	var fblock=document.getElementById(id);
-	if(fblock==null && localStorage.poo!="stop"){
+	if(fblock==null){
 		console.log("reattempt");
 		scrollBy(0,2000);
 		setTimeout(function(){scroll_log(sub,id)},300);

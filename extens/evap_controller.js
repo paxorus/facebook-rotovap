@@ -26,7 +26,13 @@ setTimeout(function(){
 
 		case "friends":evap_friends();break;
 		case "log":evap_log(sub);break;
+
+		case "phofyo":evap_phofyo();break;
+		case "albums":scroll_page(finish_albums);break;
+		case "photos":evap_photos(sub);break;
+
 		case "chat":evap_chat();break;
+
 		default:
 			localStorage.username=href;// save username
 			evap_profile();
@@ -34,4 +40,4 @@ setTimeout(function(){
 
 	// sub.set("name",localStorage.name);
 	// sub.set("payload",payload.);
-},100);
+},3000);
