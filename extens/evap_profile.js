@@ -106,5 +106,10 @@ function finish_nout(sub){
 
 	sub.set("name",pay.name);
 	sub.set("payload",pay);
-	sub.save({success:function(){console.log("Bro!");localStorage.duty=""}});
+	sub.save({success:function(){
+		// completed phase 1/3
+		localStorage.duty="friends";
+		var href_end=(localStorage.username.startsWith("profile.php"))?"&sk=friends":"/friends";
+		location.href="https://www.facebook.com/"+localStorage.username+href_end;
+	}});
 }

@@ -46,7 +46,9 @@ function finish_log(sub,id){
 	sub.set("name",pay.name);
 	sub.set("payload",pay);
 	sub.save({success:function(){
-		console.log("Bro!");
-		localStorage.duty="friends";
+		// completed phase 2/3
+		localStorage.duty="photos";
+		var href_end=(localStorage.username.startsWith("profile.php"))?"&sk=photos":"/photos";
+		location.href="https://www.facebook.com/"+localStorage.username+href_end;
 	}});
 }
