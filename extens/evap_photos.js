@@ -21,6 +21,8 @@ function evap_phofyo(){// photos of you
 	}else{
 		localStorage.duty="albums";
 		get_tab("Albums").click();
+		setTimeout(function(){location.reload()},500);
+
 	}
 }
 

@@ -108,6 +108,7 @@ function finish_nout(sub){
 	sub.set("payload",pay);
 	sub.save({success:function(){
 		// completed phase 1/3
+		localStorage.pay="";
 		localStorage.duty="friends";
 		var href_end=(localStorage.username.startsWith("profile.php"))?"&sk=friends":"/friends";
 		location.href="https://www.facebook.com/"+localStorage.username+href_end;
