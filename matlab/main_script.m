@@ -8,7 +8,7 @@
 % base=create_base(BASE_FILE_NAME);
 % REL_FILE_NAME='prakhar_friends.json';
 % data=json2data(REL_FILE_NAME);
-FIELDS={'phofyo','nf','ng','albums','ninc','nout'};
+FIELDS={'phofyo','nf','albums'};
 coeff=zeros(1,length(FIELDS));
 
 len=length(base.names);
@@ -20,6 +20,7 @@ for i=1:len
 end
 
 [coeff(1),coeff(2),scores]=algorithm(base,d1,d2,names);
+disp(coeff);
 for j=1:length(FIELDS)-2
     d1=coeff(j)*d1+coeff(j+1)*d2;
     d2=strip_column(data,FIELDS{j+2});

@@ -3,12 +3,14 @@
 % obtained from a logarithmic function to the 1-10 scale to compare with the
 % survey rankings.
 
-function [r2] = delineate(r1)
-    len=length(r1);
-    slope=max(r1)-min(r1)/9;
-    min=
-    d=zeros(1,12);
+function [attempt] = delineate(attempt)
+    len=length(attempt.ranks);
+    x0=min(attempt.ranks);
+    xf=max(attempt.ranks);
+    m=9/(xf-x0); % slope
+    
     for i=1:len
-        d(i)=log10(data{i}.(field_name));
+        x=attempt.ranks(i);
+        attempt.ranks(i)=m*(x-x0)+1;
     end
 end
