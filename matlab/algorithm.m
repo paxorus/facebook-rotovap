@@ -4,6 +4,7 @@
 % coefficients with the minimum penalty score.
 
 function [c1,c2,score_vec] = algorithm(base,d1,d2,names)
+    base=delineate(base); % deviations are additive, so normalization to 1-10 scale is required
     len=length(base.names);
     score_vec=zeros(1,101);
     min_score=Inf;
@@ -22,7 +23,7 @@ function [c1,c2,score_vec] = algorithm(base,d1,d2,names)
             attempt.names{j}=names{j};
         end
         
-        score=score_ranking(attempt,base);
+        score=score_ranking(delineate(attempt),base);
         if score<min_score
              min_score=score;
              c1=i;
